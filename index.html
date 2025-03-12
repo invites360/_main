@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<style>
+    a, a:link, a:visited, a:hover, a:active 
+    {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer; /* Mantiene il comportamento del cursore per i link */
+    }
+    .mainWindow
+    {
+        height: 50vh;
+        border-radius: 2px;
+        border: 1px solid #FFF;
+        box-shadow: 4px 4px 10px rgba(189, 195, 199,1.0);
+    }
+    body
+    {
+        background-image: url("img/background.jpg");
+
+    }
+    .bottoWindow
+    {
+        scroll-snap-align: start;
+        flex: 0 0 auto;
+        width: 40vw;  
+        height: 40vh;  /* Altezza maggiore della larghezza */
+        margin: 10px;
+        border-radius: 2px;
+        border: 1px solid #FFF;
+        box-shadow: 4px 4px 10px rgba(189, 195, 199,1.0);
+        
+    }
+    .container {
+            display: flex;
+            overflow-x: scroll;
+            white-space: nowrap;
+            width: 100vw;
+            height: 46vh;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .iframeCont
+        {
+            width:100%;
+            height: 100%;
+            
+        }
+        .clickIframe {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0); /* Trasparente */
+
+        }
+        .mainText
+        {
+            font-family: "Comfortaa", sans-serif;
+            color: #FFF;
+            text-align: center;
+            
+        }
+        .bigText
+        {
+            font-size: 4vh;
+        }
+        .smallText
+        {
+            font-size: 2vh;
+        }
+        .verySmallText
+        {
+            font-size: 1vh;
+        }
+        .image
+        {
+            border-radius: 50%;
+        }
+        .magicColor
+        {
+            color:#FAB523;
+        }
+        .iframeWrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .iframeOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0); /* Trasparente */
+            cursor: pointer;
+        }
+        .icoButton
+        {
+            font-family: "Comfortaa", sans-serif;
+            font-optical-sizing: auto;
+            font-size:40px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 10px;
+            display: block;
+            height: 50px;
+            width: 20%;
+            margin-left:35%;
+            margin-top: 20px;
+            box-shadow: 5px 5px 15px grey;
+        }
+        .ico1
+        {
+            background-color: #104459;
+            color:#fff;
+        }
+        .descButton
+        {
+            font-family: "Comfortaa", sans-serif;
+            font-size: 2vh;
+            color: #FFF;
+            text-align: center;
+        }
+
+</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+
+
+
+</head>
+<body class="corpo">
+    <div class="row container-fluid">
+        <div class="col-sm-5">
+        </div>
+        <div class="col-sm-2"> &nbsp;
+        </div>
+        <div class="col-sm-5">
+        </div>
+    </div>
+    <div class="row container-fluid">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+            <h1 class="mainText bigText">Scegli il tuo Invito Smart per sorprendere i tuoi amici!</h1> 
+            <h2 class="mainText smallText">NB Quelli riportati sotto sono solo alcuni esempi<br> puoi customizzare il tuo invito a piacimento!</h2> 
+            <h3 class="mainText smallText magicColor">In collaborazione con &nbsp;<img class="image" src="img/magic.jpg"/></h3>
+            <a target="_blank" href="FAQ.html">
+                <span class="icoButton ico1">
+                    <i class="fi fi-bs-info"></i>
+                </span>
+            </a>
+            <div class="descButton">Clicca per visualizzare le info generali!</div>
+        </div>
+        <div class="col-sm-4">
+        </div>
+    </div>
+    <div class="row container-fluid">
+        <div class="col-sm-5">
+        </div>
+        <div class="col-sm-2"> &nbsp;
+        </div>
+        <div class="col-sm-5">
+        </div>
+    </div>
+    <div class="container">
+        <span class="bottoWindow">
+            <div class="iframeWrapper">
+                <iframe class="iframeCont" src="https://invites360.github.io/sample1"></iframe>
+                <div class="iframeOverlay" onclick="window.open('https://invites360.github.io/sample1', '_blank')"></div>
+            </div>
+        </span>
+        <span class="bottoWindow">
+            <div class="iframeWrapper">
+                <iframe class="iframeCont" src="https://invites360.github.io/sample2/"></iframe>
+                <div class="iframeOverlay" onclick="window.open('https://invites360.github.io/sample2/', '_blank')"></div>
+            </div>
+        </span>
+        <span class="bottoWindow">
+            <div class="iframeWrapper">
+                <iframe class="iframeCont" src="https://invites360.github.io/sample3/"></iframe>
+                <div class="iframeOverlay" onclick="window.open('https://invites360.github.io/sample3/', '_blank')"></div>
+            </div>
+        </span>
+        <span class="bottoWindow">
+            <div class="iframeWrapper">
+                <iframe class="iframeCont" src="https://invites360.github.io/sample4/"></iframe>
+                <div class="iframeOverlay" onclick="window.open('https://invites360.github.io/sample4/', '_blank')"></div>
+            </div>
+        </span>
+
+    </div>
+</body>
+<script>
+
+</script>
+</html>
